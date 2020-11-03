@@ -3,7 +3,7 @@ import kava from 'kava'
 import { writeFile } from 'fs'
 import { join } from 'path'
 
-import list from './index.js'
+import list, { is, isnt } from './index.js'
 
 import filedirname from 'filedirname'
 const [file, dir] = filedirname()
@@ -27,6 +27,16 @@ kava.suite('orgs', function (suite, test) {
 			JSON.stringify(list, null, indentation),
 			JSON.stringify(expected, null, indentation)
 		)
+	})
+
+	test('is function works', function () {
+		equal(is('bevry'), true, 'bevry is a bevry organisation')
+		equal(is('google'), false, 'google isnt a bevry organisation')
+	})
+
+	test('isnt function works', function () {
+		equal(isnt('google'), true, 'google isnt a bevry organisation')
+		equal(isnt('bevry'), false, 'bevry is a bevry organisation')
 	})
 
 	test('write the json file', function (next) {
