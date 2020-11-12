@@ -2,6 +2,7 @@
 const list: Array<string> = [
 	'balupton',
 	'bevry',
+	'bevry-actions',
 	'bevry-archive',
 	'bevry-trading',
 	'browserstate',
