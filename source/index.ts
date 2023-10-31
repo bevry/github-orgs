@@ -4,14 +4,15 @@ const list: Array<string> = [
 	'bevry',
 	'bevry-actions',
 	'bevry-archive',
+	'bevry-labs',
 	'bevry-trading',
 	'browserstate',
 	'chainyjs',
 	'docpad',
 	'docpad-archive',
 	'elegant-talk',
+	'farenessdev',
 	'interconnectapp',
-	'webwrite',
 ]
 export default list
 

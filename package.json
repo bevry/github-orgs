@@ -1,6 +1,6 @@
 {
   "name": "@bevry/github-orgs",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "JSON listing of all the Bevry managed GitHub organisations",
   "homepage": "https://github.com/bevry/github-orgs",
   "license": "Artistic-2.0",
