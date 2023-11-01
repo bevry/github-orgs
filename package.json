@@ -1,6 +1,6 @@
 {
   "name": "@bevry/github-orgs",
-  "version": "1.6.0",
+  "version": "2.0.0",
   "description": "JSON listing of all the Bevry managed GitHub organisations",
   "homepage": "https://github.com/bevry/github-orgs",
   "license": "Artistic-2.0",
@@ -76,7 +76,7 @@
     "url": "https://github.com/bevry/github-orgs.git"
   },
   "engines": {
-    "node": ">=0.8"
+    "node": ">=10"
   },
   "editions": [
     {
@@ -166,16 +166,16 @@
   "module": "edition-browsers/index.js",
   "devDependencies": {
     "@bevry/update-contributors": "^1.22.0",
-    "@types/node": "^20.8.9",
+    "@types/node": "^20.8.10",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
     "assert-helpers": "^8.4.0",
     "eslint": "^8.52.0",
-    "eslint-config-bevry": "^3.27.0",
+    "eslint-config-bevry": "^3.28.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "filedirname": "^2.7.0",
-    "kava": "^5.15.0",
+    "filedirname": "^2.8.0",
+    "kava": "3.2.0",
     "make-deno-edition": "^1.3.0",
     "prettier": "^3.0.3",
     "projectz": "^2.23.0",
@@ -184,7 +184,7 @@
     "typedoc": "^0.25.3",
     "typescript": "5.2.2",
     "valid-directory": "^4.0.0",
-    "valid-module": "^1.17.0"
+    "valid-module": "^2.0.0"
   },
   "scripts": {
     "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",

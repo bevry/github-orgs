@@ -1,5 +1,10 @@
 # History
 
+## v2.0.0 2023 November 1
+
+-   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
+-   Minimum required node version changed from `node: >=0.8` to `node: >=10` to keep up with mandatory ecosystem changes
+
 ## v1.6.0 2023 October 31
 
 -   Remove `webwrite` (is owned by someone else now, projects have moved to `bevry-archive`)
