@@ -1,6 +1,6 @@
 {
   "name": "@bevry/github-orgs",
-  "version": "2.5.0",
+  "version": "3.0.0",
   "description": "JSON listing of all the Bevry managed GitHub organisations",
   "homepage": "https://github.com/bevry/github-orgs",
   "license": "Artistic-2.0",
@@ -80,7 +80,7 @@
     "url": "https://github.com/bevry/github-orgs.git"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=4"
   },
   "editions": [
     {
@@ -119,7 +119,7 @@
         "require"
       ],
       "engines": {
-        "node": "10 || 12 || 14 || 16 || 18 || 20 || 21",
+        "node": "4 || 6 || 8 || 10 || 12 || 14 || 16 || 18 || 20 || 21",
         "browsers": false
       }
     },
@@ -198,7 +198,7 @@
     "projectz": "^3.3.0",
     "promise-errback": "^1.0.0",
     "surge": "^0.23.1",
-    "textextensions": "^6.4.0",
+    "textextensions": "^6.5.0",
     "typedoc": "^0.25.3",
     "typescript": "5.2.2",
     "valid-directory": "^4.5.0",
@@ -242,10 +242,9 @@
   "prettier": {
     "semi": false,
     "singleQuote": true,
-    "trailingComma": "all"
+    "trailingComma": "es5"
   },
   "boundation": {
-    "nodeVersionsTestedRange": ">=10",
     "compiler": "typescript",
     "targets": [
       "ES5"

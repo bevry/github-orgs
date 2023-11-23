@@ -14,7 +14,7 @@ kava.suite('orgs', function (suite, test) {
 		equal(
 			list.length,
 			set.size,
-			'length was the same as when duplicates were removed',
+			'length was the same as when duplicates were removed'
 		)
 	})
 
@@ -22,7 +22,7 @@ kava.suite('orgs', function (suite, test) {
 		const expected = list.slice().sort()
 		equal(
 			JSON.stringify(list, null, indentation),
-			JSON.stringify(expected, null, indentation),
+			JSON.stringify(expected, null, indentation)
 		)
 	})
 
