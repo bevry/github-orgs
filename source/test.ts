@@ -1,14 +1,11 @@
 import { equal } from 'assert-helpers'
 import kava from 'kava'
-import { writeFile } from 'fs'
-import { join } from 'path'
+import writeFile from '@bevry/fs-write'
+import promiseErrback from 'promise-errback'
 
 import list, { is, isnt } from './index.js'
 
-import filedirname from 'filedirname'
-const [file, dir] = filedirname()
-const listPath = join(dir, '..', 'list.json')
-
+const listPath = /* cwd */ 'list.json'
 const indentation = '  '
 
 kava.suite('orgs', function (suite, test) {
@@ -39,10 +36,7 @@ kava.suite('orgs', function (suite, test) {
 		equal(isnt('bevry'), false, 'bevry is a bevry organisation')
 	})
 
-	test('write the json file', function (next) {
-		writeFile(listPath, JSON.stringify(list), function (error) {
-			if (error) return next(error)
-			next()
-		})
+	test('write the json file', function (done) {
+		promiseErrback(writeFile(listPath, JSON.stringify(list)), done)
 	})
 })
