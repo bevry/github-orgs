@@ -1,6 +1,6 @@
 {
   "name": "@bevry/github-orgs",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "JSON listing of all the Bevry managed GitHub organisations",
   "homepage": "https://github.com/bevry/github-orgs",
   "license": "Artistic-2.0",
@@ -184,7 +184,7 @@
   "devDependencies": {
     "@bevry/fs-write": "^1.2.0",
     "@bevry/update-contributors": "^1.23.0",
-    "@types/node": "^20.9.5",
+    "@types/node": "^20.10.0",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
     "assert-helpers": "^11.5.0",
@@ -199,7 +199,7 @@
     "projectz": "^3.3.0",
     "promise-errback": "^1.0.0",
     "surge": "^0.23.1",
-    "textextensions": "^6.5.0",
+    "textextensions": "^6.6.0",
     "typedoc": "^0.25.3",
     "typescript": "5.2.2",
     "valid-directory": "^4.5.0",
