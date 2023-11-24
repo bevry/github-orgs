@@ -1,11 +1,19 @@
+// external
 import { equal } from 'assert-helpers'
 import kava from 'kava'
 import writeFile from '@bevry/fs-write'
 import promiseErrback from 'promise-errback'
 
+// local
 import list, { is, isnt } from './index.js'
 
-const listPath = /* cwd */ 'list.json'
+// paths
+import { join } from 'path'
+import filedirname from 'filedirname'
+const [file, dir] = filedirname()
+const listPath = join(dir, '..', 'list.json')
+
+// vars
 const indentation = '  '
 
 kava.suite('orgs', function (suite, test) {
